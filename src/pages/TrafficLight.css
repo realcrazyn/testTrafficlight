@@ -1,0 +1,71 @@
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.trafficLight {
+  margin: 100px auto;
+  width: 300px;
+  height: 600px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding-top: 30px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 30px auto;
+  color: aliceblue;
+  text-align: center;
+  font-size: 90px;
+}
+
+span {
+  display: block;
+  padding-top: 10px;
+  opacity: 1;
+}
+
+.red {
+  background-color: rgb(129, 28, 28);
+  opacity: 0.1;
+}
+
+.red span {
+  color: rgb(255, 0, 0);
+}
+.yellow span {
+  color: rgb(248, 248, 6);
+}
+.green span {
+  color: rgb(12, 247, 12);
+}
+
+.yellow {
+  background-color: rgb(201, 201, 68);
+  opacity: 0.1;
+}
+
+.green {
+  background-color: green;
+  opacity: 0.1;
+}
+
+.main {
+  opacity: 1;
+}
+
+.blink {
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
